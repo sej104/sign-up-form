@@ -30,11 +30,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Content styling */
-body {
-    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-}
-
 @font-face {
     font-family: 'Norse';
     src: url(./fonts/Norse-Bold.otf);
@@ -42,7 +37,34 @@ body {
     font-style: normal;
 }
 
+body {
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+}
+
 .odin-title {
     font-family:'Norse', 'Times New Roman', Times, serif;
 }
 
+section {
+    min-height: 100vh;
+}
+
+section:first-of-type {
+    flex: 1;
+    position: relative;
+}
+
+.background-img {
+    height: 100%;
+}
+
+section:first-of-type > div,
+section:first-of-type > p {
+    position: absolute;
+    top: 3px;
+}
+
+section:nth-of-type(2){
+    flex: 2;
+}
