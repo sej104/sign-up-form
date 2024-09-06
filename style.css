@@ -29,6 +29,10 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+a {
+    color: inherit;
+}
+
 /* Content styling */
 @font-face {
     font-family: 'Norse';
@@ -43,7 +47,8 @@ body {
 }
 
 .odin-title {
-    font-family:'Norse', 'Times New Roman', Times, serif;
+    font-family: 'Norse', 'Times New Roman', Times, serif;
+    font-size: 6rem;
 }
 
 section {
@@ -62,7 +67,30 @@ section:first-of-type {
 section:first-of-type > div,
 section:first-of-type > p {
     position: absolute;
-    top: 3px;
+    width: 100%;
+    color: #fff;
+}
+
+section:first-of-type > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    top: 20%;
+    height: 150px;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+section:first-of-type > p {
+    bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.odin-logo {
+    height: 80%;
 }
 
 section:nth-of-type(2){
