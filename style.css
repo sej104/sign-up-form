@@ -162,16 +162,22 @@ button[type="submit"] {
 
 .form-container {
     height: 30vh;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: clamp(1rem, 0.75rem + 1vw, 1.4rem);
 }
 
 form {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    gap: clamp(10px, 5px + 1vh, 30px) 60px;
     max-width: 600px;
-    gap: 20px 60px;
 }
 
 form > div {
@@ -180,7 +186,7 @@ form > div {
 
 label {
     text-transform: uppercase;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 600;
     display: block;
     letter-spacing: 1.2px;
