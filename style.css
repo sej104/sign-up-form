@@ -43,9 +43,11 @@ a {
 
 @font-face {
     font-family: 'Norse';
-    src: url(./fonts/Norse-Bold.otf);
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -56,6 +58,7 @@ body {
 .odin-title {
     font-family: 'Norse', 'Times New Roman', Times, serif;
     font-size: 6rem;
+    line-height: 1.2;
 }
 
 section {
@@ -86,8 +89,7 @@ section:first-of-type > div {
     
     top: 20%;
     height: 150px;
-    background-color: #000;
-    opacity: 0.7;
+    background-color: #00000080;
 }
 
 section:first-of-type > p {
