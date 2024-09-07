@@ -96,6 +96,7 @@ section:first-of-type > p {
     bottom: 10px;
     text-align: center;
     font-weight: bold;
+    font-size: clamp(0.75rem, 0.75rem + 0.1vw, 1rem);
 }
 
 .odin-logo {
