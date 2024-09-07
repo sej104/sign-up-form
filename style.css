@@ -121,11 +121,16 @@ section:nth-of-type(2){
     height: 35vh;
 }
 
+.description-container {
+    position: relative;
+}
+
 .description-text {
-    max-inline-size: 50ch;
+    position: absolute;
+    bottom: 15%;
+    max-inline-size: 45ch;
     font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 13%;
+    font-size: clamp(1rem, 0.75rem + 1vw, 1.4rem);
 }
 
 .description-text > p:nth-child(2) {
