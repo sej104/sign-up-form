@@ -117,11 +117,11 @@ section:nth-of-type(2){
 .description-container,
 .sign-up-container {
     background-color: var(--bg-color, lightgrey); 
-    height: 35vh;
 }
 
 .description-container {
     position: relative;
+    height: 35vh;
 }
 
 .description-text {
@@ -137,10 +137,11 @@ section:nth-of-type(2){
 }
 
 .form-container {
-    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .form-container h2 {
@@ -188,6 +189,7 @@ input:user-invalid {
 .sign-up-container {
     padding-top: 40px;
     box-shadow: inset 0px 2px 13px 1px var(--box-shadow-color);
+    flex-grow: 1;
 }
 
 button[type="submit"],
